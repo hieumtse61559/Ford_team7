@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.ude-btnBlue {
+  background-color: #0276b3;
+  border: 1px solid #102b4e;
+  padding: 15px 20px;
+  transition: .3s;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ude-btnBlue:hover {
+  color: #102b4e;
+  background-color: #fff;
+}
+
+.ude-btnBlue:focus {
+  outline: none;
+}
+
+.ude-btnRed {
+  background-color: #d92e14;
+  border: 1px solid #d92e14;
+  padding: 15px 20px;
+  transition: .3s;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ude-btnRed:hover {
+  color: #d92e14;
+  background-color: #fff;
+}
+
+.ude-btnRed:focus {
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */

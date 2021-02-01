@@ -1,7 +1,8 @@
 // variable color
-$color-black-0: #29303b; // default
+$color-black-0: #333; // default
+$color-black-1:#102b4e;
 $color-white-0: #fff; //default
-$color-red-0:#ec5252;
+$color-red-0:rgb(217, 46, 20);
 $color-red-1: #521822;
 $color-red-2:#992337;
 $color-purple: #6e1a52;
@@ -11,16 +12,16 @@ $color-gray-3: #cacbcc;
 $color-gray-4: #686f7a;
 $color-gray-5:#F7F8FA;
 $color-gray-6:#dedfe0;
-$color-black-light:#505763;
+$color-black-light:rgba(85,85,85,0.8);
 $color-white-cream:#f2f3f5;
 $color-black-dark: rgba(20,23,28,.1);
 $color-yellow: #F4C150;
-$color-blue:#007791;
+$color-blue:#0276b3;
 $color-trans:transparent;
 
 // variable font-size
 $fs-0: 15px; //default
-$fs-1: 13px;
+$fs-1: 12px;
 $fs-2: 20px;
 $fs-3: 24px;
 //Còn 1 font-size: 36px;
@@ -32,11 +33,12 @@ $mg-1: 10px;
 $mg-2: 25px;
 
 //variable border-radius
-$border-radius: 2px;
+$border-radius: none;
 
 //variable padding
 $pd-0: 5px; //default
 $pd-1: 10px;
+$pd-15: 15px;
 $pd-2: 20px;
 
 

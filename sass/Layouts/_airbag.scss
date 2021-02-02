@@ -1,0 +1,17 @@
+.airbag__residents {
+  width: 95%;
+  margin: auto;
+  background-color: $color-gray-5;
+  .airbag__residents__content {
+    padding: 35px 0 70px 0;
+    .airbag__residents__title {
+      @include styleText($color-red-0, $fs-4 + 2, $fw-normal);
+      letter-spacing: 1px;
+    }
+    .airbag__residents__btn {
+      margin-top: 35px;
+      width: 260px;
+      letter-spacing: 1px;
+    }
+  }
+}

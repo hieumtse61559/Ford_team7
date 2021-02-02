@@ -1,4 +1,4 @@
-// Responsive 
+// Responsive
 // Screen > 1200
 @media screen and (min-width:1200px){
         
@@ -8,45 +8,116 @@
 
 }
 // screen < 1200
-@include responsive("extra-large")
-{
-    
-
-    // ===============================================================================
-
-
+@include responsive("extra-large") {
+  // ===============================================================================
+  //START AIR__BAG
+  .airbag__residents {
+    width: 100%;
+  }
+  //END AIR__BAG
+  //START DISCLOSURES
+  .disclosures {
+    width: 100%;
+  }
+  //END DISCLOSURES
+  //START CALI
+  .cali__residents {
+    width: 100%;
+  }
+  //END CALI
+  //START SEARCH
+  .search {
+    width: 100%;
+  }
+  //END SEARCH
 }
 // screen < 992
-@include responsive("large")
-{
-
-    
-    // ===============================================================================
-    
-     
+@include responsive("large") {
+  // ===============================================================================
+  //START AIR__BAG
+  .airbag__residents {
+    .airbag__residents__content {
+      .airbag__residents__title {
+        font-size: $fs-4 - 3;
+      }
+    }
+  }
+  //END AIR__BAG
+  //START CALI
+  .cali__residents {
+    .cali__residents__content {
+      .cali__residents__title {
+        font-size: $fs-4 - 3;
+      }
+    }
+  }
+  //END CALI
+ //START SEARCH
+ .search{
+  .search__content{
+    padding: 35px 50px;
+    .search__content__left{
+      .search__form{
+        .search__form__input{
+          font-size: $fs-3 ;
+        }
+      }
+    }
+    .search__content__right{
+      a{
+        font-size: $fs-0;
+      }
+    }
+  }
+}
+//END SEARCH
 
 }
 
-
 // screen < 768
-@include responsive("medium")
-{
-
-   
-    // ===============================================================================
-    
-    
-    
+@include responsive("medium") {
+  // ===============================================================================
+  //START AIR__BAG
+  .airbag__residents {
+    .airbag__residents__content {
+      .airbag__residents__title {
+        font-size: 30px;
+      }
+    }
+  }
+  //END AIR__BAG
+  //START CALI
+  .cali__residents {
+    .cali__residents__content {
+      .cali__residents__title {
+        font-size: 30px;
+      }
+      .cali__residents__text {
+        font-size: $fs-0;
+        letter-spacing: 0;
+      }
+    }
+  }
+  //END CALI
+  //START SEARCH
+  .search{
+    .search__content{
+      padding: 35px;
+      .search__content__left{
+        display: none;
+      }
+      .search__content__right{
+        text-align: left !important;
+        a{
+          font-size: $fs-0 + 1;
+        }
+      }
+    }
+  }
+  //END SEARCH
 }
 
 // <576
-@include responsive("small")
-{
-
-
-
-    // ===============================================================================
-
-    
-
+@include responsive("small") {
+  // ===============================================================================
 }

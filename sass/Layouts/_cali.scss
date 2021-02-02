@@ -1,0 +1,22 @@
+.cali__residents {
+  width: 95%;
+  margin: auto;
+  background-color: $color-blue-dark;
+  .cali__residents__content {
+    .cali__residents__title,
+    .cali__residents__text {
+      @include styleText($color-white-0, $fs-4 + 2, $fw-normal);
+      letter-spacing: 1px;
+    }
+    .cali__residents__text {
+      font-size: $fs-0 + 1;
+      a {
+        color: $color-blue;
+        text-decoration: underline;
+        &:hover {
+          color: $color-blue;
+        }
+      }
+    }
+  }
+}

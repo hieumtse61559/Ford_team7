@@ -9,6 +9,12 @@
 }
 // screen < 1200
 @include responsive("extra-large") {
+    // Start Header
+    header{
+        #txtAcount{
+            display: none;
+        }
+    }
   // ===============================================================================
   //START AIR__BAG
   .airbag__residents {
@@ -33,6 +39,16 @@
 }
 // screen < 992
 @include responsive("large") {
+    // Start Header
+    header{
+        .header__br{
+            display: none;
+        }
+        .header__bl{
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
   // ===============================================================================
   //START AIR__BAG
   .airbag__residents {
@@ -76,6 +92,18 @@
 
 // screen < 768
 @include responsive("medium") {
+    // START CAROUSEL SECTION
+    .carsousel{
+        height: 150%;
+        .carousel__content{
+            text-align: center;
+            h1{
+                text-align: center!important;
+                font-size: 35px!important;
+            }
+        }
+    }
+    // END CAROUSEL SECTION 
   // ===============================================================================
   //START AIR__BAG
   .airbag__residents {

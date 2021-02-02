@@ -50,6 +50,188 @@ body {
   outline: none;
 }
 
+header {
+  background-color: #f3f3f3;
+  width: 95%;
+  margin: auto;
+}
+
+header .header__top {
+  padding: 0 5%;
+  justify-content: space-between;
+}
+
+header .header__top a {
+  color: #0276b3;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+header .header__top span:hover img .cls-2 {
+  fill: #2861a4;
+}
+
+header .header__top span:hover a {
+  text-decoration: none;
+  color: #2861a4;
+}
+
+header .header__top .header__tl span:nth-child(1) {
+  padding-right: 5px;
+  margin-right: 10px;
+  border-right: 1px solid #d6d5d5;
+}
+
+header .header__top .header__tl span:nth-child(1) img {
+  color: #0276b3;
+  width: 40px;
+  height: 40px;
+}
+
+header .header__top .header__tr {
+  display: flex;
+  align-items: center;
+}
+
+header .header__top .header__tr span i {
+  color: #102b4e;
+  width: 40px;
+  height: 40px;
+}
+
+header .header__top .header__tr span:hover i {
+  color: #2861a4;
+}
+
+header .header__bottom {
+  justify-content: space-between;
+}
+
+header .header__bottom .header__bl img {
+  width: 140px;
+  height: 70px;
+}
+
+header .header__bottom .header__bl .navbar-nav a {
+  color: #0276b3;
+  font-size: 15px -1;
+  font-weight: 500;
+}
+
+header .header__bottom .header__br .bi-person-fill {
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #0276b3;
+}
+
+header .header__bottom .header__br ul {
+  margin-right: 5px;
+  padding: 0;
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+}
+
+header .header__bottom .header__br ul a {
+  color: #0276b3;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 0.4rem;
+}
+
+header .header__bottom .header__br ul a:hover {
+  color: #2861a4;
+}
+
+.carsousel {
+  width: 95%;
+  margin: auto;
+}
+
+.carsousel .carousel__container {
+  position: relative;
+}
+
+.carsousel .carousel__container img {
+  width: 100%;
+}
+
+.carsousel .carousel__container .carousel__content {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 3;
+}
+
+.carsousel .carousel__container .carousel__content h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.carsousel .carousel__container .carousel__content span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.carsousel .carousel__container .carousel__content span a i {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.carsousel .carousel__container .carousel__content span a:hover i {
+  fill: #fff;
+}
+
+.intro {
+  width: 95%;
+  margin: auto;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.intro .intro__containter {
+  display: grid;
+  grid-row-gap: 12px;
+}
+
+.intro .intro__containter h1 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.intro .intro__containter img {
+  margin: auto;
+  width: 35%;
+}
+
+.intro .intro__containter button {
+  margin: auto;
+  width: 30%;
+}
+
+.intro .intro__containter .intro__number {
+  font-size: 1.3em;
+  color: #0276b3;
+}
+
+.intro .intro__containter .intro__price {
+  font-size: 1.2em;
+}
+
+.intro .intro__containter .intro__offers {
+  color: #0276b3;
+  font-weight: 500;
+}
+
+.intro .intro__containter .intro__offers:hover {
+  text-decoration: none;
+  color: #2861a4;
+}
+
 .airbag__residents {
   width: 95%;
   margin: auto;
@@ -185,6 +367,9 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  header #txtAcount {
+    display: none;
+  }
   .airbag__residents {
     width: 100%;
   }
@@ -200,6 +385,13 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  header .header__br {
+    display: none;
+  }
+  header .header__bl {
+    width: 100%;
+    justify-content: space-between;
+  }
   .airbag__residents .airbag__residents__content .airbag__residents__title {
     font-size: 37px;
   }
@@ -218,6 +410,16 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .carsousel {
+    height: 150%;
+  }
+  .carsousel .carousel__content {
+    text-align: center;
+  }
+  .carsousel .carousel__content h1 {
+    text-align: center !important;
+    font-size: 35px !important;
+  }
   .airbag__residents .airbag__residents__content .airbag__residents__title {
     font-size: 30px;
   }

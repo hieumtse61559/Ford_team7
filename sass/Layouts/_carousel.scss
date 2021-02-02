@@ -1,0 +1,38 @@
+.carsousel{
+    width: 95%;
+    margin: auto;
+    .carousel__container{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .carousel__content{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            z-index: 3;
+            h1{
+                @include styleText($color-white-0, $fs-4 + 2, $fw-normal);
+            }
+            span{
+                @include styleText($color-white-0, $fs-0 + 1, $fw-normal);
+                a{
+                    i{
+                        // fill: none;
+                        // background-color: none;
+                        color: $color-white-0;
+                        font-size: $fs-2;
+                        margin-left: $mg-1;
+                    }
+                    &:hover{
+                        i{
+                            fill: $color-white-0;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}

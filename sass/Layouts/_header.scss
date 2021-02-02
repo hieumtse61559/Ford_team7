@@ -1,0 +1,95 @@
+header {
+  background-color: #f3f3f3;
+  width: 95%;
+  margin: auto;
+  .header__top {
+    padding: 0 5%;
+    justify-content: space-between;
+    a {
+      @include styleText($color-blue-ford-1, $fs-1, $fw-bold-0 - 100);
+    }
+    span {
+      &:hover {
+        img {
+          // background-color: red;
+          .cls-2 {
+            fill: $color-blue-ford-covertxt;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $color-blue-ford-covertxt;
+        }
+      }
+    }
+    .header__tl {
+      span:nth-child(1) {
+        padding-right: $pd-0;
+        margin-right: $mg-1;
+        img {
+          color: $color-blue-ford-1;
+          width: 40px;
+          height: 40px;
+        }
+        border-right: 1px solid $color-gray-7;
+      }
+    }
+
+    .header__tr {
+      display: flex;
+      align-items: center;
+      span {
+        i {
+          color: $color-blue-geo;
+          width: 40px;
+          height: 40px;
+        }
+        &:hover {
+          i {
+            color: $color-blue-ford-covertxt;
+          }
+        }
+      }
+    }
+  }
+
+  .header__bottom {
+     justify-content: space-between; 
+    .header__bl {
+      img {
+        width: 140px;
+        height: 70px;
+      }
+
+      .navbar-nav{
+          a{
+            @include styleText($color-blue-ford-1, $fs-0 -1,$fw-normal-1);
+          }
+      }
+    }
+
+    .header__br {
+      .bi-person-fill{
+          padding-bottom: $pd-0;
+          font-size: 20px;
+          color: $color-blue-ford-1;
+      }  
+      ul {
+        margin-right: 5px;
+        padding: 0;
+        height: 100%;
+        display: flex !important;
+        align-items: center !important;
+        text-decoration: none !important;
+        a{
+            @include styleText($color-blue-ford-1, $fs-1,$fw-normal-1);
+            padding: 0 0.4rem;
+            &:hover{
+                color: $color-blue-ford-covertxt;
+            }
+        }
+        
+      }
+    }
+  }
+}

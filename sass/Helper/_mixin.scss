@@ -1,15 +1,15 @@
-//Thêm style cho các loại chữ trong trang udemy
-@mixin styleText($color, $fs, $fw) {
+@mixin styleText($color, $fs, $fw){
     color: $color;
     font-size: $fs;
     font-weight: $fw;
-  }
-  @mixin styleButton($bg-color,$bd-color,$pd-y,$pd-x){
-      background-color: $bg-color;
-      border: 1px solid $bd-color;
-      padding: $pd-y $pd-x;
-      transition: .3s;
-  }
+}
+
+@mixin styleButton($bg-color,$bd-color,$pd-y,$pd-x){
+    background-color: $bg-color;
+    border: 1px solid $bd-color;
+    padding: $pd-y $pd-x;
+    transition: .3s;
+}
   
 // $screen :chứa tên màn hình
 @mixin responsive($screen){

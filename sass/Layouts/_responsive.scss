@@ -1,20 +1,33 @@
 // Responsive
 // Screen > 1200
-@media screen and (min-width:1200px){
-        
-
-    // ===============================================================================
-
-
+@media screen and (min-width: 1200px) {
+  // ===============================================================================
 }
 // screen < 1200
 @include responsive("extra-large") {
-    // Start Header
-    header{
-        #txtAcount{
-            display: none;
-        }
+  // Start Header
+  header {
+    width: 100%;
+    #txtAcount {
+      display: none;
     }
+    .header__bottom {
+      .header__bl {
+        .navbar-nav {
+          a {
+            margin-left: $mg-0;
+          }
+        }
+      }
+      .header__br {
+        ul {
+          a {
+            margin-right: $mg-0;
+          }
+        }
+      }
+    }
+  }
   // ===============================================================================
   //START AIR__BAG
   .airbag__residents {
@@ -36,19 +49,35 @@
     width: 100%;
   }
   //END SEARCH
+  //START categories
+  .categories {
+    width: 100%;
+    .categories__content {
+      .categories__bottom {
+        .categories__bottom__items {
+          margin-top: 5px;
+          .categories__icons__left,
+          .categories__text__left {
+            margin-top: 60px;
+          }
+        }
+      }
+    }
+  }
+  //END categories
 }
 // screen < 992
 @include responsive("large") {
-    // Start Header
-    header{
-        .header__br{
-            display: none;
-        }
-        .header__bl{
-            width: 100%;
-            justify-content: space-between;
-        }
+  // Start Header
+  header {
+    .header__br {
+      display: none;
     }
+    .header__bl {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
   // ===============================================================================
   //START AIR__BAG
   .airbag__residents {
@@ -68,42 +97,41 @@
     }
   }
   //END CALI
- //START SEARCH
- .search{
-  .search__content{
-    padding: 35px 50px;
-    .search__content__left{
-      .search__form{
-        .search__form__input{
-          font-size: $fs-3 ;
+  //START SEARCH
+  .search {
+    .search__content {
+      padding: 35px 50px;
+      .search__content__left {
+        .search__form {
+          .search__form__input {
+            font-size: $fs-3;
+          }
+        }
+      }
+      .search__content__right {
+        a {
+          font-size: $fs-0;
         }
       }
     }
-    .search__content__right{
-      a{
-        font-size: $fs-0;
-      }
-    }
   }
-}
-//END SEARCH
-
+  //END SEARCH
 }
 
 // screen < 768
 @include responsive("medium") {
-    // START CAROUSEL SECTION
-    .carsousel{
-        height: 150%;
-        .carousel__content{
-            text-align: center;
-            h1{
-                text-align: center!important;
-                font-size: 35px!important;
-            }
-        }
+  // START CAROUSEL SECTION
+  .carsousel {
+    height: 150%;
+    .carousel__content {
+      text-align: center;
+      h1 {
+        text-align: center !important;
+        font-size: 35px !important;
+      }
     }
-    // END CAROUSEL SECTION 
+  }
+  // END CAROUSEL SECTION
   // ===============================================================================
   //START AIR__BAG
   .airbag__residents {
@@ -128,21 +156,56 @@
   }
   //END CALI
   //START SEARCH
-  .search{
-    .search__content{
+  .search {
+    .search__content {
       padding: 35px;
-      .search__content__left{
+      .search__content__left {
         display: none;
       }
-      .search__content__right{
+      .search__content__right {
         text-align: left !important;
-        a{
+        a {
           font-size: $fs-0 + 1;
         }
       }
     }
   }
   //END SEARCH
+    // START categories
+  .categories{
+    .categories__content{
+      .categories__bottom{
+        .categories__bottom__items{
+          padding :0;
+          margin-top: $mg-2;
+          .categories__icons__left,
+          .categories__text__left {
+            margin-top: 0;
+            padding-bottom: $pd-2;
+          }
+          .categories__text__right {
+            margin-top: -60px;
+          }
+          .categories__icons__left{
+           i{
+            width: 33px;
+            height: 33px;
+            font-size: .9rem;
+            padding :10px;
+           }
+          }
+          .categories__text__left {
+            font-size: $fs-0;
+            line-height: 35px;
+          }
+        }
+        .line__bottom{
+          border-bottom: 1px solid $color-gray-4;  
+        }
+      }
+    }
+  }
+  //END categories
 }
 
 // <576

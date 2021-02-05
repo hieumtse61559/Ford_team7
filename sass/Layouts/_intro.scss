@@ -1,41 +1,39 @@
-.intro{
-    width: 95%;
-    margin: auto;
-    padding: 15px 0;
-    text-align: center;
-    .intro__containter{
-        display: grid;
-        grid-row-gap: $fs-1;
-        h1{
-            font-size: $fs-4 + 2;
-            font-weight: $fw-normal;
-        }
-        img{
-            
-            margin: auto;
-            width: 35%;
-        }
-        button{
-            margin: auto;
-            width: 30%;
-        }
-         .intro__number{
-             font-size: 1.3em;
-             color: $color-blue-ford-1;
-             
-         }
-
-         .intro__price{
-             font-size: 1.2em;
-         }
-
-         .intro__offers{
-             color: $color-blue-ford-1;
-             font-weight: $fw-normal-1;
-             &:hover{
-                 text-decoration: none;
-                 color: $color-blue-ford-covertxt;
-             }
-         }
+.intro {
+  width: 95%;
+  margin: auto;
+  padding: 15px 0;
+  text-align: center;
+  .intro__containter {
+    display: grid;
+    grid-row-gap: $fs-1;
+    h1 {
+      font-size: $fs-4 + 2;
+      font-weight: $fw-normal;
     }
+    img {
+      margin: auto;
+      width: 35%;
+    }
+    button {
+      margin: auto;
+      width: 30%;
+    }
+    .intro__number {
+      font-size: 1.3em;
+      color: $color-blue-ford-1;
+    }
+
+    .intro__price {
+      font-size: 1.2em;
+    }
+
+    .intro__offers {
+      color: $color-blue-ford-1;
+      font-weight: $fw-normal-1;
+      &:hover {
+        text-decoration: none;
+        color: $color-blue-ford-covertxt;
+      }
+    }
+  }
 }

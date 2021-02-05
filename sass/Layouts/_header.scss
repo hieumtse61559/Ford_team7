@@ -9,13 +9,10 @@ header {
       @include styleText($color-blue-ford-1, $fs-1, $fw-bold-0 - 100);
     }
     span {
+      a {
+        color: $color-blue-geo;
+      }
       &:hover {
-        img {
-          // background-color: red;
-          .cls-2 {
-            fill: $color-blue-ford-covertxt;
-          }
-        }
         a {
           text-decoration: none;
           color: $color-blue-ford-covertxt;
@@ -27,7 +24,6 @@ header {
         padding-right: $pd-0;
         margin-right: $mg-1;
         img {
-          color: $color-blue-ford-1;
           width: 40px;
           height: 40px;
         }
@@ -49,46 +45,54 @@ header {
             color: $color-blue-ford-covertxt;
           }
         }
+        a {
+          color: $color-blue-ford-1;
+        }
       }
     }
   }
 
   .header__bottom {
-     justify-content: space-between; 
+    justify-content: space-between;
     .header__bl {
       img {
         width: 140px;
         height: 70px;
+        margin-left: $mg-1;
       }
 
-      .navbar-nav{
-          a{
-            @include styleText($color-blue-ford-1, $fs-0 -1,$fw-normal-1);
+      .navbar-nav {
+        a {
+          @include styleText($color-blue-ford-1, $fs-0 - 1, $fw-normal-1);
+          margin-left: $mg-1;
+          &:hover {
+            color: $color-blue-geo;
           }
+        }
       }
     }
 
     .header__br {
-      .bi-person-fill{
-          padding-bottom: $pd-0;
-          font-size: 20px;
-          color: $color-blue-ford-1;
-      }  
+      .bi-person-fill {
+        padding-bottom: $pd-0;
+        font-size: 20px;
+        color: $color-blue-ford-1;
+      }
       ul {
-        margin-right: 5px;
+        margin-right: 40px;
         padding: 0;
         height: 100%;
         display: flex !important;
         align-items: center !important;
         text-decoration: none !important;
-        a{
-            @include styleText($color-blue-ford-1, $fs-1,$fw-normal-1);
-            padding: 0 0.4rem;
-            &:hover{
-                color: $color-blue-ford-covertxt;
-            }
+        a {
+          @include styleText($color-blue-ford-1, $fs-1, $fw-normal-1);
+          padding: 0 0.4rem;
+          margin-right: $mg-1 + 5;
+          &:hover {
+            color: $color-blue-geo;
+          }
         }
-        
       }
     }
   }

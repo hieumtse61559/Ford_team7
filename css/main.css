@@ -67,8 +67,8 @@ header .header__top a {
   font-weight: 500;
 }
 
-header .header__top span:hover img .cls-2 {
-  fill: #2861a4;
+header .header__top span a {
+  color: #102b4e;
 }
 
 header .header__top span:hover a {
@@ -83,7 +83,6 @@ header .header__top .header__tl span:nth-child(1) {
 }
 
 header .header__top .header__tl span:nth-child(1) img {
-  color: #0276b3;
   width: 40px;
   height: 40px;
 }
@@ -103,6 +102,10 @@ header .header__top .header__tr span:hover i {
   color: #2861a4;
 }
 
+header .header__top .header__tr span a {
+  color: #0276b3;
+}
+
 header .header__bottom {
   justify-content: space-between;
 }
@@ -110,12 +113,18 @@ header .header__bottom {
 header .header__bottom .header__bl img {
   width: 140px;
   height: 70px;
+  margin-left: 10px;
 }
 
 header .header__bottom .header__bl .navbar-nav a {
   color: #0276b3;
-  font-size: 15px -1;
+  font-size: 14px;
   font-weight: 500;
+  margin-left: 10px;
+}
+
+header .header__bottom .header__bl .navbar-nav a:hover {
+  color: #102b4e;
 }
 
 header .header__bottom .header__br .bi-person-fill {
@@ -125,7 +134,7 @@ header .header__bottom .header__br .bi-person-fill {
 }
 
 header .header__bottom .header__br ul {
-  margin-right: 5px;
+  margin-right: 40px;
   padding: 0;
   height: 100%;
   display: flex !important;
@@ -138,10 +147,11 @@ header .header__bottom .header__br ul a {
   font-size: 12px;
   font-weight: 500;
   padding: 0 0.4rem;
+  margin-right: 15px;
 }
 
 header .header__bottom .header__br ul a:hover {
-  color: #2861a4;
+  color: #102b4e;
 }
 
 .carsousel {
@@ -296,19 +306,18 @@ header .header__bottom .header__br ul a:hover {
 }
 
 .cali__residents .cali__residents__content .cali__residents__text a {
-  color: #0276b3;
+  color: #37a9e8;
   text-decoration: underline;
 }
 
 .cali__residents .cali__residents__content .cali__residents__text a:hover {
-  color: #0276b3;
+  color: #37a9e8;
 }
 
 .search {
   width: 95%;
   margin: auto;
   background-color: #333;
-  margin-bottom: 100px;
 }
 
 .search .search__content {
@@ -366,9 +375,119 @@ header .header__bottom .header__br ul a:hover {
   color: #fff;
 }
 
+.categories {
+  width: 95%;
+  margin: auto;
+}
+
+.categories .categories__content .categories__top {
+  background-color: #242424;
+  padding: 25px 70px 90px 50px;
+  min-height: 475px;
+}
+
+.categories .categories__content .categories__top .categories__top__list {
+  list-style: none;
+}
+
+.categories .categories__content .categories__top .categories__top__list .categories__list__title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 25px 0;
+}
+
+.categories .categories__content .categories__top .categories__top__list .categories__list__item {
+  padding-bottom: 2px;
+}
+
+.categories .categories__content .categories__top .categories__top__list .categories__list__item a {
+  color: #a7a7a7;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.categories .categories__content .categories__top .categories__top__list .categories__list__item a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.categories .categories__content .categories__bottom {
+  background-color: #102b4e;
+  padding: 0 5%;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items {
+  margin: 40px 0;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__left i {
+  font-size: 1.1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0276b3;
+  padding: 12px;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__text__left {
+  line-height: 45px;
+  margin-left: 15px;
+  color: #37a9e8;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__text__right {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__right {
+  font-size: 1.1rem;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__right .fab {
+  width: 35px;
+  height: 40px;
+  padding: 12px 10px;
+  margin-right: 10px;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__right .fa-facebook-square {
+  background-color: #3C5B99;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__right .fa-twitter {
+  background-color: #1DA2F3;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__right .fa-youtube {
+  background-color: #FF0100;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__right .fa-instagram {
+  background-color: #DC2C75;
+}
+
+.categories .categories__content .categories__bottom .categories__bottom__items:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
+  header {
+    width: 100%;
+  }
   header #txtAcount {
     display: none;
+  }
+  header .header__bottom .header__bl .navbar-nav a {
+    margin-left: 2px;
+  }
+  header .header__bottom .header__br ul a {
+    margin-right: 2px;
   }
   .airbag__residents {
     width: 100%;
@@ -381,6 +500,16 @@ header .header__bottom .header__br ul a:hover {
   }
   .search {
     width: 100%;
+  }
+  .categories {
+    width: 100%;
+  }
+  .categories .categories__content .categories__bottom .categories__bottom__items {
+    margin-top: 5px;
+  }
+  .categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__left,
+  .categories .categories__content .categories__bottom .categories__bottom__items .categories__text__left {
+    margin-top: 60px;
   }
 }
 
@@ -441,6 +570,31 @@ header .header__bottom .header__br ul a:hover {
   }
   .search .search__content .search__content__right a {
     font-size: 16px;
+  }
+  .categories .categories__content .categories__bottom .categories__bottom__items {
+    padding: 0;
+    margin-top: 25px;
+  }
+  .categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__left,
+  .categories .categories__content .categories__bottom .categories__bottom__items .categories__text__left {
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  .categories .categories__content .categories__bottom .categories__bottom__items .categories__text__right {
+    margin-top: -60px;
+  }
+  .categories .categories__content .categories__bottom .categories__bottom__items .categories__icons__left i {
+    width: 33px;
+    height: 33px;
+    font-size: .9rem;
+    padding: 10px;
+  }
+  .categories .categories__content .categories__bottom .categories__bottom__items .categories__text__left {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .categories .categories__content .categories__bottom .line__bottom {
+    border-bottom: 1px solid #686f7a;
   }
 }
 /*# sourceMappingURL=main.css.map */

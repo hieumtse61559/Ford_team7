@@ -28,49 +28,52 @@
       background-color: $color-blue-geo;
       padding: 0 5%;
       .categories__bottom__items {
-          margin: 40px 0;
+        margin: 40px 0 25px 0;
+        &:hover {
+          cursor: pointer;
+        }
         .categories__icons__left {
           i {
-              font-size: 1.1rem;
+            font-size: 1.1rem;
             width: 40px;
             height: 40px;
             border-radius: 50%;
             background-color: $color-blue;
-            padding:12px;
+            padding: 12px;
           }
         }
         .categories__text__left {
-            line-height:45px;
-            margin-left: $mg-1 + 5;
-            @include styleText(#37a9e8, $fs-2, $fw-normal);
+          line-height: 45px;
+          margin-left: $mg-1 + 5;
+          @include styleText(#37a9e8, $fs-2, $fw-normal);
         }
-        .categories__text__right{
-            @include styleText($color-white-0,$fs-1 + 2, $fw-normal);
-            line-height:45px;
+        .categories__text__right {
+          @include styleText($color-white-0, $fs-1 + 2, $fw-normal);
+          padding: 10px;
+          &:hover {
+            cursor: auto;
+          }
         }
-        .categories__icons__right{
-            font-size: 1.1rem;
-            .fab{
-                width: 35px;
-                height: 40px;
-                padding :12px 10px;
-                margin-right: $mg-1 ;
-            }
-            .fa-facebook-square{
-                background-color: #3C5B99;
-            }
-            .fa-twitter{
-                background-color: #1DA2F3;
-            }
-            .fa-youtube{
-                background-color: #FF0100;
-            }
-            .fa-instagram{
-                background-color: #DC2C75;
-            }
-        }
-        &:hover {
-          cursor: pointer;
+        .categories__icons__right {
+          font-size: 1.1rem;
+          .fab {
+            width: 35px;
+            height: 40px;
+            padding: 12px 10px;
+            margin-right: $mg-1;
+          }
+          .fa-facebook-square {
+            background-color: #3c5b99;
+          }
+          .fa-twitter {
+            background-color: #1da2f3;
+          }
+          .fa-youtube {
+            background-color: #ff0100;
+          }
+          .fa-instagram {
+            background-color: #dc2c75;
+          }
         }
       }
     }

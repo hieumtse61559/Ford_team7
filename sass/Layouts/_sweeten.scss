@@ -1,0 +1,84 @@
+.sweeten__deal{
+    width: 95%;
+    margin: auto;
+    .sweeten__head{
+        height: 200px;
+        background-image: url("../img/let-us.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        h2{
+            padding-top: $pd-15;
+            margin-bottom: 100px;
+            @include styleText($color-white-0, $fs-4 + 2, $fw-normal-1);
+        }
+        div{
+            // margin-top: 7%;
+            position: relative;
+            span{
+            @include styleText($color-white-0, $fs-0 + 1, $fw-normal-1);
+
+            }
+            i{
+                position: absolute;
+                bottom: 4px;
+                margin-left: 10px;
+                color: white;
+                
+            }
+            // position: absolute;
+            // bottom: -170%;
+            // // left: 45%;
+        }
+    }
+
+    .sweeten__content{
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .sweeten__item{
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .item__intro{
+                width: 100%;
+
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                background-color: rgba($color: #0276b3, $alpha: 0.9);
+                padding: $pd-1;  
+                
+                span{
+                    @include styleText($color-white-0, $fs-1, $fw-normal);
+                }
+                
+            }
+        }
+
+        .item-happen{
+            grid-column: 1 / 4;
+            padding-top: 13%;
+            text-align: center;
+            h3{
+                @include styleText($color-black-0, $fs-3 + 6, $fw-normal-1);
+            }
+            p{
+                @include styleText(#626466, $fs-0 +1, $fw-normal-1);
+            }
+            
+        }
+
+        .item-biggest{
+            grid-row: 2 / 4;
+            grid-column: 1 / 3;
+        }
+    }
+}

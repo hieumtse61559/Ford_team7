@@ -152,14 +152,66 @@
   .carsousel {
     height: 150%;
     .carousel__content {
-      text-align: center;
+      // text-align: center;
       h1 {
         text-align: center !important;
-        font-size: 35px !important;
+        font-size: $fs-3 !important;
       }
+      
     }
   }
   // END CAROUSEL SECTION
+
+  // Start INTRO section
+    .intro{
+      .intro__containter{
+        h1{
+          font-size: 30px !important;
+        }
+      }
+    }
+  // End Intro section
+
+  // Start Sweeten section
+    .sweeten__deal{
+      .sweeten__head{
+        h2{
+          font-size: $fs-3 + 4;
+        }
+        span, i {
+          font-size:  $fs-2;
+        }
+      }
+      .sweeten__content{
+        display: block;
+        .item-happen{
+          p{
+            display: none;
+          }
+          padding-bottom: 40px;
+        }
+
+        .item-hidden{
+          display: none;
+        }
+
+        .sweeten__item{
+          max-height: 300px;
+          .item__intro{
+            padding: 15px;
+            span{
+              @include styleText($color-white-0, $fs-2, $fw-normal);
+            }
+            i{
+              font-size: $fs-4;
+            }
+          }
+          
+        }
+      }
+    }
+  // End Sweeten section
+
   // ===============================================================================
   //START AIR__BAG
   .airbag__residents {

@@ -287,11 +287,13 @@ header .header__bottom .header__br ul a:hover {
 
 .sweeten__deal .sweeten__content .sweeten__item {
   position: relative;
+  overflow: hidden;
 }
 
 .sweeten__deal .sweeten__content .sweeten__item img {
   width: 100%;
   height: 100%;
+  transition: all 0.5s;
 }
 
 .sweeten__deal .sweeten__content .sweeten__item .item__intro {
@@ -310,6 +312,10 @@ header .header__bottom .header__br ul a:hover {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
+}
+
+.sweeten__deal .sweeten__content .sweeten__item:hover img {
+  transform: scale(1.1);
 }
 
 .sweeten__deal .sweeten__content .item-happen {
@@ -333,6 +339,18 @@ header .header__bottom .header__br ul a:hover {
 .sweeten__deal .sweeten__content .item-biggest {
   grid-row: 2 / 4;
   grid-column: 1 / 3;
+}
+
+.sweeten__deal .sweeten__content .item-biggest .item__intro {
+  padding: 20px 10px;
+}
+
+.sweeten__deal .sweeten__content .item-biggest .item__intro span {
+  font-size: 24px;
+}
+
+.sweeten__deal .sweeten__content .item-biggest .item__intro i {
+  font-size: 40px;
 }
 
 .airbag__residents {
@@ -730,12 +748,44 @@ footer .footer__content .footer__list .footer__list__menu .footer__list__item a:
   .carsousel {
     height: 150%;
   }
-  .carsousel .carousel__content {
-    text-align: center;
-  }
   .carsousel .carousel__content h1 {
     text-align: center !important;
-    font-size: 35px !important;
+    font-size: 24px !important;
+  }
+  .intro .intro__containter h1 {
+    font-size: 30px !important;
+  }
+  .sweeten__deal .sweeten__head h2 {
+    font-size: 28px;
+  }
+  .sweeten__deal .sweeten__head span, .sweeten__deal .sweeten__head i {
+    font-size: 20px;
+  }
+  .sweeten__deal .sweeten__content {
+    display: block;
+  }
+  .sweeten__deal .sweeten__content .item-happen {
+    padding-bottom: 40px;
+  }
+  .sweeten__deal .sweeten__content .item-happen p {
+    display: none;
+  }
+  .sweeten__deal .sweeten__content .item-hidden {
+    display: none;
+  }
+  .sweeten__deal .sweeten__content .sweeten__item {
+    max-height: 300px;
+  }
+  .sweeten__deal .sweeten__content .sweeten__item .item__intro {
+    padding: 15px;
+  }
+  .sweeten__deal .sweeten__content .sweeten__item .item__intro span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .sweeten__deal .sweeten__content .sweeten__item .item__intro i {
+    font-size: 40px;
   }
   .airbag__residents .airbag__residents__content .airbag__residents__title {
     font-size: 30px;

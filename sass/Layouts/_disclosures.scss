@@ -14,5 +14,16 @@
         cursor: pointer;
       }
     }
+    .disclosures__paragraph{
+      background: #f7f7f7;
+      margin-top: $mg-2;
+      padding: $pd-2;
+      max-height: 240px;
+      overflow-y: scroll;
+      display: none;
+    }
+    .fa-angle-up{
+      display: none;
+    }
   }
 }

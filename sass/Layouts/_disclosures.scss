@@ -14,17 +14,16 @@
           cursor: pointer;
         }
       }
-      .collapse{
-          .card-body{
-            margin-top: $mg-2;
-              padding: 0;
-              border: none;
-            textarea {
-                @include styleText($color-black-0, $fs-1 + 1, $fw-normal);
-                resize: none;
-                padding: 40px 6%;
-            }
-          }
-      }
+    .disclosures__paragraph{
+      background: #f7f7f7;
+      margin-top: $mg-2;
+      padding: $pd-2;
+      max-height: 240px;
+      overflow-y: scroll;
+      display: none;
+    }
+    .fa-angle-up{
+      display: none;
     }
   }
+}

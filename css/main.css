@@ -398,18 +398,18 @@ header .header__bottom .header__br ul a:hover {
   cursor: pointer;
 }
 
-.disclosures .disclosures__content .collapse .card-body {
+
+.disclosures .disclosures__content .disclosures__paragraph {
+  background: #f7f7f7;
   margin-top: 25px;
-  padding: 0;
-  border: none;
+  padding: 20px;
+  max-height: 240px;
+  overflow-y: scroll;
+  display: none;
 }
 
-.disclosures .disclosures__content .collapse .card-body textarea {
-  color: #333;
-  font-size: 13px;
-  font-weight: 400;
-  resize: none;
-  padding: 40px 6%;
+.disclosures .disclosures__content .fa-angle-up {
+  display: none;
 }
 
 .cali__residents {

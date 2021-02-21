@@ -220,7 +220,13 @@
     </section>
     <section class="disclosures mb-5">
       <div class="disclosures__content">
-        <div class="disclosures__btn">
+        <div
+          class="disclosures__btn"
+          data-toggle="collapse"
+          data-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
           <span class="disclosures__btn__title"> DISCLOSURES </span>
           <span class="disclosures__btn__icons">
             <i class="fa fa-angle-down" id="id-down"></i>
@@ -339,7 +345,7 @@
       <div class="categories__content text-white">
         <div class="categories__top">
           <div class="row">
-            <div class="col">
+            <div class="col-sm-12 col-md-3 col-lg d-none d-md-block">
               <ul class="categories__top__list">
                 <h3 class="categories__list__title">All Vehicles</h3>
                 <li class="categories__list__item">
@@ -372,7 +378,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-3 col-lg d-none d-md-block">
               <ul class="categories__top__list">
                 <h3 class="categories__list__title">Shopping Tools</h3>
                 <li class="categories__list__item">
@@ -401,7 +407,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col-lg d-none d-lg-block">
               <ul class="categories__top__list">
                 <h3 class="categories__list__title">Finance</h3>
                 <li class="categories__list__item">
@@ -442,7 +448,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col-lg d-none d-lg-block">
               <ul class="categories__top__list">
                 <h3 class="categories__list__title">Owner</h3>
                 <li class="categories__list__item">
@@ -493,7 +499,7 @@
                 <li class="categories__list__item"><a href="#">Ask Ford</a></li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col-lg d-none d-lg-block">
               <ul class="categories__top__list">
                 <h3 class="categories__list__title">Experience Ford</h3>
                 <li class="categories__list__item">
@@ -531,6 +537,344 @@
                   <a href="#">Ford Telematics</a>
                 </li>
               </ul>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-0 d-block d-md-none">
+              <div class="accordion" id="accordionExample1">
+                <div class="card">
+                  <div class="card-header" id="headingB">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-block text-left"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseB"
+                        aria-expanded="true"
+                        aria-controls="collapseB"
+                        disabled
+                      >
+                        <span class="text-collapse"> All Vehicles </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseB"
+                    class="collapse show"
+                    aria-labelledby="headingB"
+                    data-parent="#accordionExample1"
+                  >
+                    <div class="card-body">
+                      <ul class="categories__top__list">
+                        <li class="categories__list__item">
+                          <a href="#">SUVs & Crossovers</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Trucks & Vans</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Cars</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Electrics</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Commercial Vehicles</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Future Vehicles</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Used Vehicles</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Fleet Vehicles</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">All Vehicles</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Performance Vehicles</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingA">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-block text-left"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseA"
+                        aria-expanded="false"
+                        aria-controls="collapseA"
+                      >
+                        <span class="text-collapse"> Shopping Tools </span>
+                        <span class="icon-collapse">
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseA"
+                    class="collapse"
+                    aria-labelledby="headingA"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <ul class="categories__top__list">
+                        <li class="categories__list__item">
+                          <a href="#">Build & Price</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Search Inventory</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Get a Quote</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Pricing & Incentives</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Trade-In Value</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Get a Brochure</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Compare Vehicles</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Get Updates</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-0 d-block d-lg-none">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-block text-left"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span class="text-collapse"> Finance </span>
+                        <span class="icon-collapse">
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="#headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <ul class="categories__top__list">
+                        <li class="categories__list__item">
+                          <a href="#">Why Ford Credit</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Finance Options</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Payment Calculator</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Credit Education</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Customer Support</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Promise</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Apply Online</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Credit Account</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Insure</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Interest Advantage</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Investor Center</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Credit Careers</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        <span class="text-collapse"> Owner </span>
+                        <span class="icon-collapse">
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <ul class="categories__top__list">
+                        <li class="categories__list__item">
+                          <a href="#">Owner Home</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Schedule Service</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Your Warranty</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Service Coupons & Offers</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Redeem & Rebate</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">SYNC & Technology</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">SYNC Software Updates</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Owner Manuals</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Locate a Dealer</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Parts</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Contact Us</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Roadside Assistance</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Protect</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Safety Recalls</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Airbag Recalls</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ask Ford</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
+                        <span class="text-collapse"> Experience Ford </span>
+                        <span class="icon-collapse">
+                          <i class="fa fa-angle-down"></i>
+                        </span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <ul class="categories__top__list">
+                        <li class="categories__list__item">
+                          <a href="#">Corporate</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Careers</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Investors</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Company News</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">About Ford</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Racing</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Accessories Store</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Warriors in Pink</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Merchandise</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Motor Company Fund</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">SYNC</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">FordPass</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Co-Pilot360 Technology</a>
+                        </li>
+                        <li class="categories__list__item">
+                          <a href="#">Ford Telematics</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

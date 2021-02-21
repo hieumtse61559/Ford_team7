@@ -1,19 +1,19 @@
 .disclosures {
-  width: 95%;
-  margin: auto;
-  .disclosures__content {
-    .disclosures__btn {
-      margin-top: $mg-2;
-      text-align: center;
-      @include styleText($color-blue, $fs-0 + 1, $fw-normal);
-      .disclosures__btn__title {
-        margin-right: $mg-1;
+    width: 95%;
+    margin: auto;
+    .disclosures__content {
+      .disclosures__btn {
+        margin-top: $mg-2;
+        text-align: center;
+        @include styleText($color-blue, $fs-0 + 1, $fw-normal);
+        .disclosures__btn__title {
+          margin-right: $mg-1;
+        }
+        &:hover {
+          color: $color-black-1;
+          cursor: pointer;
+        }
       }
-      &:hover {
-        color: $color-black-1;
-        cursor: pointer;
-      }
-    }
     .disclosures__paragraph{
       background: #f7f7f7;
       margin-top: $mg-2;

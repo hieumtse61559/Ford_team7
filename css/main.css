@@ -398,6 +398,7 @@ header .header__bottom .header__br ul a:hover {
   cursor: pointer;
 }
 
+
 .disclosures .disclosures__content .disclosures__paragraph {
   background: #f7f7f7;
   margin-top: 25px;
@@ -532,6 +533,50 @@ header .header__bottom .header__br ul a:hover {
 }
 
 .categories .categories__content .categories__top .categories__top__list .categories__list__item a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.categories .categories__content .categories__top .card {
+  background-color: #242424;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #686f7a;
+}
+
+.categories .categories__content .categories__top .card .card-header {
+  padding: 10px 40px;
+  padding-top: 25px;
+  border-bottom: 1px solid #686f7a;
+}
+
+.categories .categories__content .categories__top .card .card-header .text-collapse,
+.categories .categories__content .categories__top .card .card-header .icon-collapse {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 25px 0;
+  margin-left: -20px;
+}
+
+.categories .categories__content .categories__top .card .card-header .icon-collapse {
+  position: absolute;
+  right: 5%;
+  top: 0;
+}
+
+.categories .categories__content .categories__top .card .collapse .card-body .categories__list__item {
+  padding-bottom: 2px;
+}
+
+.categories .categories__content .categories__top .card .collapse .card-body .categories__list__item a {
+  color: #a7a7a7;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.categories .categories__content .categories__top .card .collapse .card-body .categories__list__item a:hover {
   text-decoration: none;
   color: #fff;
 }

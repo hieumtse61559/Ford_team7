@@ -33,16 +33,21 @@
           padding: $pd-1 40px;
           padding-top: 25px;
           border-bottom: 1px solid $color-gray-4;
-          .text-collapse,
-          .icon-collapse {
-            @include styleText($color-white-0, $fs-0 + 1, $fw-normal);
-            margin: $mg-2 0;
-            margin-left: -20px;
-          }
-          .icon-collapse {
-            position: absolute;
-            right: 5%;
-            top: 0;
+          .btn.btn-block {
+            .text-collapse,
+            .icon-collapse {
+              @include styleText($color-white-0, $fs-2, $fw-normal);
+              margin-left: -50px;
+            }
+            .icon-collapse {
+              position: absolute;
+              right: 5%;
+              top: 22px;
+              font-size: 1.7rem;
+            }
+            &:focus{
+              box-shadow: none;
+            }
           }
         }
         .collapse {

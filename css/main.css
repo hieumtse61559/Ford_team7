@@ -398,14 +398,14 @@ header .header__bottom .header__br ul a:hover {
   cursor: pointer;
 }
 
-
 .disclosures .disclosures__content .disclosures__paragraph {
   background: #f7f7f7;
   margin-top: 25px;
-  padding: 20px;
+  padding: 40px 6%;
   max-height: 240px;
   overflow-y: scroll;
   display: none;
+  font-size: 13px;
 }
 
 .disclosures .disclosures__content .fa-angle-up {
@@ -551,19 +551,23 @@ header .header__bottom .header__br ul a:hover {
   border-bottom: 1px solid #686f7a;
 }
 
-.categories .categories__content .categories__top .card .card-header .text-collapse,
-.categories .categories__content .categories__top .card .card-header .icon-collapse {
+.categories .categories__content .categories__top .card .card-header .btn.btn-block .text-collapse,
+.categories .categories__content .categories__top .card .card-header .btn.btn-block .icon-collapse {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
-  margin: 25px 0;
-  margin-left: -20px;
+  margin-left: -50px;
 }
 
-.categories .categories__content .categories__top .card .card-header .icon-collapse {
+.categories .categories__content .categories__top .card .card-header .btn.btn-block .icon-collapse {
   position: absolute;
   right: 5%;
-  top: 0;
+  top: 22px;
+  font-size: 1.7rem;
+}
+
+.categories .categories__content .categories__top .card .card-header .btn.btn-block:focus {
+  box-shadow: none;
 }
 
 .categories .categories__content .categories__top .card .collapse .card-body .categories__list__item {
@@ -657,7 +661,7 @@ footer {
 
 footer .footer__content {
   margin: 0 4%;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 
 footer .footer__content .footer__change a {
@@ -738,6 +742,15 @@ footer .footer__content .footer__list .footer__list__menu .footer__list__item a:
   }
   header .header__bottom .header__br ul a {
     margin-right: 2px;
+  }
+  .carsousel {
+    width: 100%;
+  }
+  .intro {
+    width: 100%;
+  }
+  .sweeten__deal {
+    width: 100%;
   }
   .airbag__residents {
     width: 100%;

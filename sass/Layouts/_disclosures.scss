@@ -17,10 +17,11 @@
     .disclosures__paragraph{
       background: #f7f7f7;
       margin-top: $mg-2;
-      padding: $pd-2;
+      padding: 40px 6%;
       max-height: 240px;
       overflow-y: scroll;
       display: none;
+      font-size: 13px;
     }
     .fa-angle-up{
       display: none;

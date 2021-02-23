@@ -90,7 +90,7 @@
           @include styleText(#37a9e8, $fs-2, $fw-normal);
         }
         .categories__text__right {
-          @include styleText($color-white-0, $fs-1 + 2, $fw-normal);
+          @include styleText($color-white-0, $fs-1, $fw-normal);
           padding: 10px;
           &:hover {
             cursor: auto;

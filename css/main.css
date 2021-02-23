@@ -245,6 +245,7 @@ header .header__bottom .header__br ul a:hover {
 .sweeten__deal {
   width: 95%;
   margin: auto;
+  cursor: pointer;
 }
 
 .sweeten__deal .sweeten__head {
@@ -617,7 +618,7 @@ header .header__bottom .header__br ul a:hover {
 
 .categories .categories__content .categories__bottom .categories__bottom__items .categories__text__right {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   padding: 10px;
 }

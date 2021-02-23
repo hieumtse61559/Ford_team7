@@ -61,6 +61,9 @@
                 span{
                     @include styleText($color-white-0, $fs-1, $fw-normal);
                 }
+                i{
+                    color: white;
+                }
                 
             }
             &:hover{

@@ -315,6 +315,10 @@ header .header__bottom .header__br ul a:hover {
   font-weight: 400;
 }
 
+.sweeten__deal .sweeten__content .sweeten__item .item__intro i {
+  color: white;
+}
+
 .sweeten__deal .sweeten__content .sweeten__item:hover img {
   transform: scale(1.1);
 }

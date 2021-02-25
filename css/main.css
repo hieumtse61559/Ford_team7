@@ -77,7 +77,7 @@ header {
   position: fixed;
   top: 0;
   left: 2.5%;
-  z-index: 19;
+  z-index: 5;
 }
 
 header .header__top {
@@ -181,6 +181,7 @@ header .header__bottom .header__br ul a:hover {
 .carsousel {
   width: 95%;
   margin: auto;
+  margin-top: 80px;
 }
 
 .carsousel .carousel__container {
@@ -193,7 +194,7 @@ header .header__bottom .header__br ul a:hover {
 
 .carsousel .carousel__container .carousel__content {
   position: absolute;
-  top: 5%;
+  top: 15%;
   left: 5%;
   z-index: 3;
 }
@@ -779,6 +780,7 @@ footer .footer__content .footer__list .footer__list__menu .footer__list__item a:
 @media screen and (max-width: 1200px) {
   header {
     width: 100%;
+    left: 0;
   }
   header #txtAcount {
     display: none;
@@ -830,6 +832,9 @@ footer .footer__content .footer__list .footer__list__menu .footer__list__item a:
 }
 
 @media screen and (max-width: 992px) {
+  header .header__top {
+    display: none !important;
+  }
   header .header__br {
     display: none;
   }

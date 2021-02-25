@@ -1,6 +1,7 @@
 .carsousel {
   width: 95%;
   margin: auto;
+  margin-top: 80px;
   .carousel__container {
     position: relative;
     img {
@@ -8,7 +9,7 @@
     }
     .carousel__content {
       position: absolute;
-      top: 5%;
+      top: 15%;
       left: 5%;
       z-index: 3;
       h1 {

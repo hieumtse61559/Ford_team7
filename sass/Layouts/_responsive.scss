@@ -8,6 +8,7 @@
   // Start Header
   header {
     width: 100%;
+    left: 0;
     #txtAcount {
       display: none;
     }
@@ -98,6 +99,9 @@
 @include responsive("large") {
   // Start Header
   header {
+    .header__top{
+      display: none!important;
+    }
     .header__br {
       display: none;
     }

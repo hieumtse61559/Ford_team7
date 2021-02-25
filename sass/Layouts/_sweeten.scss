@@ -104,4 +104,16 @@
             
         }
     }
+    .sweeten__bottom{
+        background-color: $color-blue;
+        text-align: center;
+        @include styleText($color-white-0, $fs-3, $fw-normal);
+        padding: $pd-2 0;
+        span{
+            margin-right: $mg-1;
+        }
+        .fa-minus-circle{
+            display: none;
+        }
+    }
 }

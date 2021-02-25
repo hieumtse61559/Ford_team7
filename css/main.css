@@ -50,6 +50,26 @@ body {
   outline: none;
 }
 
+#myback2Top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  background-color: rgba(58, 58, 58, 0.5);
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
 header {
   background-color: #f3f3f3;
   width: 95%;
@@ -356,6 +376,23 @@ header .header__bottom .header__br ul a:hover {
 
 .sweeten__deal .sweeten__content .item-biggest .item__intro i {
   font-size: 40px;
+}
+
+.sweeten__deal .sweeten__bottom {
+  background-color: #0276b3;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.sweeten__deal .sweeten__bottom span {
+  margin-right: 10px;
+}
+
+.sweeten__deal .sweeten__bottom .fa-minus-circle {
+  display: none;
 }
 
 .airbag__residents {

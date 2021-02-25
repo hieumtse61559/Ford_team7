@@ -1,7 +1,12 @@
 header {
+  
   background-color: #f3f3f3;
   width: 95%;
   margin: auto;
+  position: fixed;
+  top: 0;
+  left: 2.5%;
+  z-index: 19;
   .header__top {
     padding: 0 5%;
     justify-content: space-between;
